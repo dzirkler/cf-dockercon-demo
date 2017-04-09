@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 15.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webservice", "webservice.csproj", "{1B5E9AF0-A398-4243-B0EA-9B4264982751}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webservice", "webservice/webservice.csproj", "{1B5E9AF0-A398-4243-B0EA-9B4264982751}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
