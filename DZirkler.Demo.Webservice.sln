@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		build.sh = build.sh
 		codefresh.yml = codefresh.yml
 		runtests.sh = runtests.sh
+		Data.Dockerfile = Data.Dockerfile
+		data.txt = data.txt
 	EndProjectSection
 EndProject
 Global
