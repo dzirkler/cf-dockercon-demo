@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{8118C1AC-BDA9-4BBE-9FC2-6B3803EB9409}|Unit Tests">
   <MonoDevelop.Ide.Workbench ActiveDocument="codefresh.yml">
     <Files>
-      <File FileName="runtests.sh" Line="1" Column="1" />
-      <File FileName="build.sh" Line="1" Column="1" />
-      <File FileName="codefresh.yml" Line="11" Column="7" />
+      <File FileName="codefresh.yml" Line="39" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
