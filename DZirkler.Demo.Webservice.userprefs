@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{1B5E9AF0-A398-4243-B0EA-9B4264982751}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="webservice/Controllers/ValuesController.cs">
+﻿<Properties StartupConfiguration="{8118C1AC-BDA9-4BBE-9FC2-6B3803EB9409}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test-webservice/HelloTests.cs">
     <Files>
-      <File FileName="webservice/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="webservice/Controllers/HelloController.cs" Line="1" Column="1" />
+      <File FileName="test-webservice/HelloTests.cs" Line="15" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,4 +12,5 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.webservice PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.test-webservice PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

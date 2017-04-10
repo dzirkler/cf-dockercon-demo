@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
-namespace webservice
+namespace DZirkler.Demo.Webservice
 {
     public class Program
     {
