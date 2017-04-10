@@ -5,9 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZirkler.Demo.Webservice", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZirkler.Demo.Webservice.Tests", "DZirkler.Demo.Webservice.Tests\DZirkler.Demo.Webservice.Tests.csproj", "{8118C1AC-BDA9-4BBE-9FC2-6B3803EB9409}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker Files", "Docker Files", "{57672270-91EA-4AA6-A560-DE249419665F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{57672270-91EA-4AA6-A560-DE249419665F}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile = Dockerfile
+		build.sh = build.sh
+		codefresh.yml = codefresh.yml
+		runtests.sh = runtests.sh
 	EndProjectSection
 EndProject
 Global
