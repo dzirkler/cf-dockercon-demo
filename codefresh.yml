@@ -1,0 +1,44 @@
+﻿version: '1.0'
+
+steps:
+
+  dotnet_build:
+    title: Dotnet Build 
+    image: microsoft/dotnet:1.1.1-sdk
+    working_directory: ${{main_clone}}
+    commands:
+      - bash -c "./build.sh"
+
+  run_tests:
+    title: Run Dotnet Tests 
+    image: microsoft/dotnet:1.1.1-sdk
+    working_directory: ${{main_clone}}
+    commands:
+      - bash -c "./runtests.sh"
+
+  build_image:
+    title: Build Docker Image
+    type: build
+    image_name: dzirkler/cf-dockercon-demo
+    dockerfile: Dockerfile
+    tag: ${{CF_BRANCH}}
+
+  push_image_latest:
+    title: Push Image to Docker Hub (latest)
+    type: push
+    candidate: ${{build_image}}
+    tag: latest
+    when:
+      branch:
+        only:
+          - master
+
+  push_image_branch:
+    title: Push Image to Docker Hub (branch)
+    type: push
+    candidate: ${{build_image}}
+    tag: ${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}
+    when:
+      condition:
+          all:
+            masterBranch: '"${{CF_BRANCH}}" != "master"'
