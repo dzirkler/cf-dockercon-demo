@@ -27,8 +27,6 @@ steps:
     type: composition
     composition: cf-dockercon-demo_ci
     composition_candidates:
-      webservice:
-        image: ${{build_image}}
       tests:
         image: ${{build_tests}}
 
