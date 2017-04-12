@@ -5,6 +5,8 @@ steps:
   dotnet_build:
     title: Dotnet Build 
     image: microsoft/dotnet:1.1.1-sdk
+    image_name: dzirkler/dotnetsdk
+    tag: ${{CF_BRANCH}}
     working_directory: ${{main_clone}}
     commands:
       - bash -c "./build.sh"
