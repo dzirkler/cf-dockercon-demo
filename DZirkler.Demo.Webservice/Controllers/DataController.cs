@@ -9,7 +9,7 @@ namespace DZirkler.Demo.Webservice.Controllers
 	[Route("api/v1/[controller]")]
 	public class DataController : Controller
 	{
-		// GET api/hello
+		// GET api/data
 		[HttpGet]
 		public List<string> Get()
 		{
