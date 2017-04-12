@@ -24,6 +24,7 @@ steps:
     tag: ${{CF_BRANCH}}
 
   run_tests:
+    type: composition
     composition: cf-dockercon-demo_ci
     composition_candidates:
       webservice:
