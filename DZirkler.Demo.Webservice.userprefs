@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{1B5E9AF0-A398-4243-B0EA-9B4264982751}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DZirkler.Demo.Webservice/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dockerfile">
     <Files>
-      <File FileName="DZirkler.Demo.Webservice/Program.cs" Line="1" Column="1" />
-      <File FileName="DZirkler.Demo.Webservice/Startup.cs" Line="1" Column="1" />
-      <File FileName="DZirkler.Demo.Webservice/appsettings.json" Line="1" Column="1" />
+      <File FileName="startup.sh" Line="1" Column="1" />
+      <File FileName="Dockerfile" Line="3" Column="19" />
+      <File FileName="nginx.conf" Line="9" Column="27" />
+      <File FileName="DZirkler.Demo.Webservice/Program.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

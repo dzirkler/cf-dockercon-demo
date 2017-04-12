@@ -9,19 +9,26 @@ steps:
     commands:
       - bash -c "./build.sh"
 
-  run_tests:
-    title: Run Dotnet Tests 
-    image: microsoft/dotnet:1.1.1-sdk
-    working_directory: ${{main_clone}}
-    commands:
-      - bash -c "./runtests.sh"
-
   build_image:
     title: Build Docker Image
     type: build
     image_name: dzirkler/cf-dockercon-demo
     dockerfile: Dockerfile
     tag: ${{CF_BRANCH}}
+
+  build_tests:
+    title: Build Tests Image
+    type: build
+    image_name: dzirkler/cf-dockercon-demo-tests
+    dockerfile: Tests.Dockerfile
+    tag: ${{CF_BRANCH}}
+
+  run_tests:
+    type: composition
+    composition: cf-dockercon-demo_ci
+    composition_candidates:
+      tests:
+        image: ${{build_tests}}
 
   push_image_latest:
     title: Push Image to Docker Hub (latest)
