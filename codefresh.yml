@@ -12,12 +12,12 @@ steps:
   run_tests:
     title: Run Dotnet Tests 
     composition: cf-dockercon-demo_ci
-      composition_candidates:
-    	tests:
-    	  image: ${{dotnet_build}}
-          working_directory: ${{main_clone}}
-    	  commands:
-    	    - bash -c "./runtests.sh"
+    composition_candidates:
+      tests:
+        image: ${{dotnet_build}}
+        working_directory: ${{main_clone}}
+        commands:
+          - bash -c "./runtests.sh"
 
   build_image:
     title: Build Docker Image
