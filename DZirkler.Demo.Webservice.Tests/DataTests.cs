@@ -1,32 +1,31 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DZirkler.Demo.Webservice.Controllers;
+using System.Net.Http;
 
 namespace DZirkler.Demo.Webservice.Tests
 {
 	[TestClass]
 	public class DataTests
 	{
-		DataController _controller = new DataController();
+		static HttpClient _httpClient = new HttpClient();
+		string _baseUrl = Environment.GetEnvironmentVariable("BASE_URL");
 
 		[TestMethod]
-		public void TestDataGet_Count()
+		public void TestDataGet()
 		{
 
-			int expected = 2;
-			int actual = _controller.Get().Count;
+			var response = _httpClient.GetStringAsync(GetMethodUrl(("/api/v1/data"))).Result;
 
-			Assert.AreEqual<int>(expected, actual, "GET Method did not return expected number of results.");
+			string expected = "[\"This is a data line.\",\"Another bit of data.\"]";
+			string actual = response;
+
+			Assert.AreEqual<string>(expected, actual, "GET Method did not return expected results.");
 		}
 
-		[DataRow(0, "This is a data line.")]
-		[DataRow(1, "Another bit of data.")]
-		[DataTestMethod]
-		public void TestDataGet_Values(int index, string expected)
+		private string GetMethodUrl(string methodPartial)
 		{
-			string actual = _controller.Get()[index];
-
-			Assert.AreEqual<string>(expected, actual, string.Format("GET Method did not return expected result for index {0}.", index));
+			return string.Format("{0}{1}", _baseUrl, methodPartial);
 		}
 
 	}

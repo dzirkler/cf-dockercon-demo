@@ -5,21 +5,33 @@ steps:
   dotnet_build:
     title: Dotnet Build 
     image: microsoft/dotnet:1.1.1-sdk
-    image_name: dzirkler/dotnetsdk
-    tag: ${{CF_BRANCH}}
     working_directory: ${{main_clone}}
     commands:
       - bash -c "./build.sh"
 
-  run_tests:
+  build_image:
+    title: Build Docker Image
+    type: build
+    image_name: dzirkler/cf-dockercon-demo
+    dockerfile: Dockerfile
+    tag: ${{CF_BRANCH}}
+
+  build_tests:
+    title: Build Tests Image
+    type: build
+    image_name: dzirkler/cf-dockercon-demo-tests
+    dockerfile: Tests.Dockerfile
+    tag: ${{CF_BRANCH}}
+
+    run_tests:
     title: Run Dotnet Tests 
     composition: cf-dockercon-demo_ci
     composition_candidates:
+      webservice:
+        image: ${{build_image}}
       tests:
-        image: ${{dotnet_build}}
-        working_directory: ${{main_clone}}
-        commands:
-          - bash -c "./runtests.sh"
+        image: ${{build_tests}}
+
 
   build_image:
     title: Build Docker Image

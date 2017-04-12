@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{1B5E9AF0-A398-4243-B0EA-9B4264982751}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="codefresh.yml">
     <Files>
-      <File FileName="DZirkler.Demo.Webservice/Program.cs" Line="1" Column="1" />
-      <File FileName="DZirkler.Demo.Webservice/Startup.cs" Line="1" Column="1" />
-      <File FileName="DZirkler.Demo.Webservice/appsettings.json" Line="1" Column="1" />
-      <File FileName="Data.Dockerfile" Line="1" Column="1" />
-      <File FileName="DZirkler.Demo.Webservice.Tests/DataTests.cs" Line="16" Column="21" />
-      <File FileName="DZirkler.Demo.Webservice/Controllers/DataController.cs" Line="12" Column="18" />
-      <File FileName="codefresh.yml" Line="7" Column="12" />
+      <File FileName="codefresh.yml" Line="20" Column="23" />
+      <File FileName="DZirkler.Demo.Webservice.Tests/DataTests.cs" Line="15" Column="28" />
+      <File FileName="DZirkler.Demo.Webservice.Tests/HelloTests.cs" Line="14" Column="3" />
+      <File FileName="buildtests.sh" Line="1" Column="1" />
+      <File FileName="build_data_image.sh" Line="1" Column="1" />
       <File FileName="build.sh" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
