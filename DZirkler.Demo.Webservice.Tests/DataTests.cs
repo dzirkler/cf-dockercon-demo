@@ -17,7 +17,7 @@ namespace DZirkler.Demo.Webservice.Tests
 
 			var response = _httpClient.GetStringAsync(GetMethodUrl(("/api/v1/data"))).Result;
 
-			string expected = "[\"This is a data line.\",\"Another bit of data.\"]";
+			string expected = "[\"This is a data line.\",\"Another bit of data.\",\"\"]";
 			string actual = response;
 
 			Assert.AreEqual<string>(expected, actual, "GET Method did not return expected results.");
