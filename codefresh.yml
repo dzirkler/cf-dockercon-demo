@@ -23,22 +23,13 @@ steps:
     dockerfile: Tests.Dockerfile
     tag: ${{CF_BRANCH}}
 
-    run_tests:
-    title: Run Dotnet Tests 
+  run_tests:
     composition: cf-dockercon-demo_ci
     composition_candidates:
       webservice:
         image: ${{build_image}}
       tests:
         image: ${{build_tests}}
-
-
-  build_image:
-    title: Build Docker Image
-    type: build
-    image_name: dzirkler/cf-dockercon-demo
-    dockerfile: Dockerfile
-    tag: ${{CF_BRANCH}}
 
   push_image_latest:
     title: Push Image to Docker Hub (latest)
