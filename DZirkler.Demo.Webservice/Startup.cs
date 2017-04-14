@@ -38,6 +38,7 @@ namespace DZirkler.Demo.Webservice
 			loggerFactory.AddDebug();
 
 			app.UseDefaultFiles();
+			app.UseStaticFiles();
 
 			app.UseMvc();
 		}
