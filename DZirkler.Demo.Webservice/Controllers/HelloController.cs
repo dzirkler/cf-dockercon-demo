@@ -13,7 +13,7 @@ namespace DZirkler.Demo.Webservice.Controllers
 		[HttpGet]
 		public string Get()
 		{
-			return "Hello World!";
+			return "Hello DockerCon!";
 		}
 
 	}
