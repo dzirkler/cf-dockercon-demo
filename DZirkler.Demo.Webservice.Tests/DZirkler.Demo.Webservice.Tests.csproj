@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DZirkler.Demo.Webservice\DZirkler.Demo.Webservice.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
   </ItemGroup>
 </Project>
