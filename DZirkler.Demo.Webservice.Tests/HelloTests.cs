@@ -18,7 +18,7 @@ namespace DZirkler.Demo.Webservice.Tests
 
 			var response = _httpClient.GetStringAsync(GetMethodUrl(("/api/v1/hello"))).Result;
 
-			string expected = "Hello World!";
+			string expected = "Hello DockerCon!";
 			string actual = response;
 
 			Assert.AreEqual<string>(expected, actual, "GET Method did not return expected result.");
