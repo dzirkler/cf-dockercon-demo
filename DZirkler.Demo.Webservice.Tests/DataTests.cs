@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DZirkler.Demo.Webservice.Controllers;
 using System.Net.Http;
 
 namespace DZirkler.Demo.Webservice.Tests
