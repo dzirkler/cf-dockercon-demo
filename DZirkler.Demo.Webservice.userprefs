@@ -1,8 +1,30 @@
 ﻿<Properties StartupConfiguration="{1B5E9AF0-A398-4243-B0EA-9B4264982751}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DZirkler.Demo.Webservice/Controllers/HelloController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DZirkler.Demo.Webservice.Tests/HelloTests.cs">
     <Files>
       <File FileName="DZirkler.Demo.Webservice/Controllers/HelloController.cs" Line="16" Column="23" />
+      <File FileName="DZirkler.Demo.Webservice.Tests/HelloTests.cs" Line="21" Column="34" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DZirkler.Demo.Webservice" expanded="True">
+            <Node name="Solution Files" expanded="True" />
+            <Node name="DZirkler.Demo.Webservice" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+            <Node name="DZirkler.Demo.Webservice.Tests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="HelloTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

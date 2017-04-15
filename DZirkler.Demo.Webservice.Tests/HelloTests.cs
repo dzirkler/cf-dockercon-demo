@@ -2,10 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DZirkler.Demo.Webservice.Controllers;
 using System.Net.Http;
-      
+
 namespace DZirkler.Demo.Webservice.Tests
 {
-    [TestClass]
+	[TestClass]
 	public class HelloTests
 	{
 		static HttpClient _httpClient = new HttpClient();
@@ -18,7 +18,7 @@ namespace DZirkler.Demo.Webservice.Tests
 
 			var response = _httpClient.GetStringAsync(GetMethodUrl(("/api/v1/hello"))).Result;
 
-			string expected = "Hello DockerCon!";
+			string expected = "Hello World!";
 			string actual = response;
 
 			Assert.AreEqual<string>(expected, actual, "GET Method did not return expected result.");
