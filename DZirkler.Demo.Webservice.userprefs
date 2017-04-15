@@ -8,9 +8,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DZirkler.Demo.Webservice" expanded="True">
-            <Node name="Solution Files" expanded="True">
-              <Node name="/Users/dzirkler/Projects/experiments/cf-dockercon-demo/startup.sh" selected="True" />
-            </Node>
+            <Node name="Solution Files" expanded="True" />
             <Node name="DZirkler.Demo.Webservice" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
